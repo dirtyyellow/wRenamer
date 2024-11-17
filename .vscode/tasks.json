@@ -1,0 +1,130 @@
+{
+        "version": "2.0.0",
+        "tasks": [
+                {
+                        "label": "g++",
+                        "command": "g++",
+                        "args": [
+                                "-g",
+                                "${file}",
+                                "-o",
+                                "${fileDirname}/${fileBasenameNoExtension}.exe"
+                        ],
+                        "problemMatcher": {
+                                "owner": "cpp",
+                                "fileLocation": [
+                                        "relative",
+                                        "${workspaceRoot}"
+                                ],
+                                "pattern": {
+                                        "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                                        "file": 1,
+                                        "line": 2,
+                                        "column": 3,
+                                        "severity": 4,
+                                        "message": 5
+                                }
+                        },
+                        "group": "build"
+                },
+                {
+                        "type": "cppbuild",
+                        "label": "C/C++: g++.exe 生成活动文件",
+                        "command": "C:/MinGW/bin/g++.exe",
+                        "args": [
+                                "-fdiagnostics-color=always",
+                                "-g",
+                                "${file}",
+                                "-I./include",
+                                "-I", "C:/Program Files/OpenCV/install/include", 
+				"-I", "C:/Program Files (x86)/exiv2/include",
+                                "-L", "C:/Program Files/OpenCV/install/x64/mingw/bin", 
+				"-L", "C:/Program Files (x86)/exiv2/bin",
+				"-l","libopencv_img_hash4100",
+				"-l","libopencv_img_hash4100d",
+				"-l","libopencv_world4100",
+				"-l","libopencv_world4100d",
+				"-l","opencv_videoio_ffmpeg4100_64",
+                                "-l","libexiv2",
+                                "-o",
+                                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                        ],
+                        "options": {
+                                "cwd": "C:/MinGW/bin"
+                        },
+                        "problemMatcher": [
+                                "$gcc"
+                        ],
+                        "group": {
+                                "kind": "build",
+                                "isDefault": true
+                        },
+                        "detail": "调试器生成的任务。"
+                },
+                {
+                        "type": "cppbuild",
+                        "label": "C/C++: g++.exe 生成活动文件",
+                        "command": "C:/MinGW/bin/g++.exe",
+                        "args": [
+                                "-fdiagnostics-color=always",
+                                "-g",
+                                "${file}",
+                                "-o",
+                                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                        ],
+                        "options": {
+                                "cwd": "C:/MinGW/bin"
+                        },
+                        "problemMatcher": [
+                                "$gcc"
+                        ],
+                        "group": "build",
+                        "detail": "编译器: C:/MinGW/bin/g++.exe"
+                },
+                {
+                        "type": "cppbuild",
+                        "label": "C/C++: g++.exe 生成活动文件",
+                        "command": "C:/MinGW/bin/g++.exe",
+                        "args": [
+                                "-fdiagnostics-color=always",
+                                "-g",
+                                "${file}",
+                                "-o",
+                                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                        ],
+                        "options": {
+                                "cwd": "C:/MinGW/bin"
+                        },
+                        "problemMatcher": [
+                                "$gcc"
+                        ],
+                        "group": "build",
+                        "detail": "编译器: C:/MinGW/bin/g++.exe"
+                },
+                {
+                        "type": "cmake",
+                        "label": "CMake: 配置",
+                        "command": "configure",
+                        "problemMatcher": [],
+                        "detail": "CMake 模板 配置 任务"
+                },
+                {
+                        "type": "cmake",
+                        "label": "CMake: 安装",
+                        "command": "install",
+                        "problemMatcher": [],
+                        "detail": "CMake 模板 安装 任务"
+                },
+                {
+                        "type": "cmake",
+                        "label": "CMake: 清理重新生成",
+                        "command": "cleanRebuild",
+                        "targets": [
+                                "[N/a - 选择工具包]"
+                        ],
+                        "group": "build",
+                        "problemMatcher": [],
+                        "detail": "CMake 模板 清理重新生成 任务"
+                }
+        ]
+}
