@@ -1,0 +1,14 @@
+[
+{
+  "directory": "C:/Users/10549/Desktop/wRenamer/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/wRenamer.dir/includes_CXX.rsp -g -o CMakeFiles\\wRenamer.dir\\src\\wRenamer.cpp.obj -c C:\\Users\\10549\\Desktop\\wRenamer\\src\\wRenamer.cpp",
+  "file": "C:/Users/10549/Desktop/wRenamer/src/wRenamer.cpp",
+  "output": "CMakeFiles/wRenamer.dir/src/wRenamer.cpp.obj"
+},
+{
+  "directory": "C:/Users/10549/Desktop/wRenamer/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/wRenamer.dir/includes_CXX.rsp -g -o CMakeFiles\\wRenamer.dir\\main.cpp.obj -c C:\\Users\\10549\\Desktop\\wRenamer\\main.cpp",
+  "file": "C:/Users/10549/Desktop/wRenamer/main.cpp",
+  "output": "CMakeFiles/wRenamer.dir/main.cpp.obj"
+}
+]
