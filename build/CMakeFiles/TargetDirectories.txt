@@ -1,3 +1,0 @@
-C:/Users/10549/Downloads/wRenamer/build/CMakeFiles/wRenamer.dir
-C:/Users/10549/Downloads/wRenamer/build/CMakeFiles/edit_cache.dir
-C:/Users/10549/Downloads/wRenamer/build/CMakeFiles/rebuild_cache.dir
