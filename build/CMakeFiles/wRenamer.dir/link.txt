@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\wRenamer.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\wRenamer.dir/objects.a @CMakeFiles\wRenamer.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\wRenamer.dir/objects.a -Wl,--no-whole-archive -o wRenamer.exe -Wl,--out-implib,libwRenamer.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\wRenamer.dir\linkLibs.rsp
