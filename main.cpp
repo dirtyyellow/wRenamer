@@ -22,7 +22,7 @@ int main() {
     //     // return 1;
     // }
 
-    fs::path dataset("C:\\Users\\10549\\Desktop\\testa");
+    fs::path dataset("\\to\\your\\path\\");
     wRenamer(dataset);
     // exifDelete(dataset);
 

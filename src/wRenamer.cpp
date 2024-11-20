@@ -61,7 +61,7 @@ void wRenamer(fs::path& dataset) {
             // }
 
             Exiv2::ExifKey temp = Exiv2::ExifKey("Exif.Image.DateTime");
-        	Exiv2::ExifData::iterator pos = exifData.findKey(temp);
+        	Exiv2::ExifData::iterator pos = exifData.findKey(move(temp));
 
             if(pos == exifData.end()) {
                 cout << setw(4) << setfill('0') << ++count << ".";
@@ -84,7 +84,7 @@ void wRenamer(fs::path& dataset) {
                 cout << "Renamed:            " << prePath.string() << " to " \
                     << curPath.filename().string() << endl;
             } 
-            catch (const fs::filesystem_error& err) {
+            catch(const fs::filesystem_error& err) {
                 cerr << "Error renaming file: " << err.what() << endl;
             }
         }
